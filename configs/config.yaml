@@ -1,0 +1,25 @@
+layout_detection:
+  model: juliozhao/DocLayout-YOLO-DocStructBench
+  confidence_threshold: 0.25
+
+translation:
+  model: facebook/nllb-200-distilled-600M
+  num_beams: 4
+  max_length: 512
+  batch_size: 8
+
+languages:
+  english: eng_Latn
+  hindi: hin_Deva
+  arabic: arb_Arab
+  chinese_simplified: zho_Hans
+  chinese_traditional: zho_Hant
+  french: fra_Latn
+  german: deu_Latn
+  spanish: spa_Latn
+  japanese: jpn_Jpan
+  korean: kor_Hang
+  russian: rus_Cyrl
+  urdu: urd_Arab
+  tamil: tam_Taml
+  telugu: tel_Telu
